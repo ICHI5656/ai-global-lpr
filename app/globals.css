@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 301 73% 60%;
+    --primary-shade-100: 280 63% 48%;
+    --primary-shade-200: 281 63% 33%;
+    --primary-shade-300: 280 62% 25%;
+    --primary-shade-400: 281 67% 17%;
+    --primary-shade-500: 280 67% 13%;
+    --primary-shade-600: 281 67% 8%;
+    --primary-shade-700: 281 68% 4%;
+    
+    --primary-tint-100: 291 82% 74%;
+    --primary-tint-200: 287 91% 84%;
+    --primary-tint-300: 282 97% 91%;
+    --primary-tint-400: 281 60% 94%;
+    
+    --error: 3 87% 57%;
+    --warning: 36 100% 50%;
+    --info: 207 90% 61%;
+    --success: 122 39% 49%;
+    
+    --neutral-100: 0 0% 70%;
+    --neutral-200: 0 0% 60%;
+    --neutral-300: 0 0% 27%;
+    --neutral-400: 0 0% 21%;
+    --neutral-500: 0 0% 19%;
+    --neutral-600: 0 0% 14%;
+    --neutral-700: 0 0% 12%;
+    --neutral-800: 0 0% 11%;
+    --neutral-900: 0 0% 10%;
+    --neutral-1000: 0 0% 7%;
+  }
+  
+  
+  body {
+    @apply bg-neutral-1000 text-neutral-100;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary via-primary-shade-100 to-primary-shade-200;
+  }
+  
+  .gradient-primary-light {
+    @apply bg-gradient-to-r from-primary-tint-200 via-primary to-primary-shade-100;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-tint-100;
+  }
+}
