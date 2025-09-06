@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Button } from "@/components/ui/Button"
 import { Typography } from "@/components/ui/Typography"
 import { ArrowRight, Shield, Zap, Sparkles } from "lucide-react"
@@ -17,9 +18,24 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-7xl px-spacing-4 sm:px-spacing-6 lg:px-spacing-8 py-spacing-17">
         <div className="text-center">
           <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="mb-spacing-8"
+          >
+            <Image
+              src="/logo.png"
+              alt="AI Global Logo"
+              width={120}
+              height={120}
+              className="w-30 h-30 mx-auto"
+            />
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Typography
               as="h1"
@@ -51,7 +67,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-spacing-4 justify-center mb-spacing-12"
           >
             <Button size="lg" className="group">
@@ -66,7 +82,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-spacing-6 max-w-4xl mx-auto"
           >
             <div className="flex flex-col items-center">

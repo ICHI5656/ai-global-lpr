@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -19,8 +20,15 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 bg-neutral-1000/90 backdrop-blur-md border-b border-neutral-800">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-spacing-4 lg:px-spacing-6" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="text-header-4 font-bold text-gradient">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="AI Global Logo"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
+            <span className="text-header-4 font-bold text-gradient hidden sm:block">
               AI Global
             </span>
           </Link>
@@ -60,7 +68,14 @@ export default function Header() {
         <div className="fixed inset-0 z-50" />
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-1000 px-spacing-4 py-spacing-4 sm:max-w-sm sm:ring-1 sm:ring-neutral-800">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="AI Global Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+              />
               <span className="text-header-4 font-bold text-gradient">
                 AI Global
               </span>
