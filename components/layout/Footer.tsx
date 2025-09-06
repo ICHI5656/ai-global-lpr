@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
 const footerNavigation = {
@@ -137,6 +138,16 @@ export default function Footer() {
             &copy; 2024 AI Global株式会社. All rights reserved.
           </p>
         </div>
+      </div>
+      {/* Footer Bottom Image */}
+      <div className="w-full bg-neutral-1000">
+        <Image
+          src="/footer-bottom.png"
+          alt="AI Global Footer"
+          width={1920}
+          height={400}
+          className="w-full h-auto object-cover"
+        />
       </div>
     </footer>
   )
