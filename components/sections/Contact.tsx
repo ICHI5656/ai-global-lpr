@@ -87,10 +87,10 @@ export default function Contact() {
             className="lg:col-span-1 space-y-spacing-6"
           >
             <div>
-              <Typography variant="h4" color="light" className="mb-spacing-4">
+              <Typography variant="h4" textColor="light" className="mb-spacing-4">
                 お問い合わせ情報
               </Typography>
-              <Typography variant="body" color="muted" className="mb-spacing-6">
+              <Typography variant="body" textColor="muted" className="mb-spacing-6">
                 ご不明な点がございましたら、以下の連絡先までお気軽にお問い合わせください。
               </Typography>
             </div>
@@ -106,10 +106,10 @@ export default function Contact() {
                     <item.icon className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <Typography variant="body-sm" color="muted">
+                    <Typography variant="body-sm" textColor="muted">
                       {item.title}
                     </Typography>
-                    <Typography variant="body" color="light">
+                    <Typography variant="body" textColor="light">
                       {item.info}
                     </Typography>
                   </div>
@@ -148,10 +148,10 @@ export default function Contact() {
                     className="flex flex-col items-center justify-center py-spacing-12"
                   >
                     <CheckCircle className="h-16 w-16 text-success mb-spacing-4" />
-                    <Typography variant="h4" color="light" className="mb-spacing-2">
+                    <Typography variant="h4" textColor="light" className="mb-spacing-2">
                       送信完了しました
                     </Typography>
-                    <Typography variant="body" color="muted">
+                    <Typography variant="body" textColor="muted">
                       お問い合わせありがとうございます。担当者より連絡させていただきます。
                     </Typography>
                   </motion.div>

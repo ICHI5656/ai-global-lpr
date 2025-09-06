@@ -97,7 +97,7 @@ export default function Services() {
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-start">
                         <span className="text-primary mr-spacing-2">✓</span>
-                        <Typography variant="body-sm" color="muted">
+                        <Typography variant="body-sm" textColor="muted">
                           {feature}
                         </Typography>
                       </li>
@@ -129,7 +129,7 @@ export default function Services() {
               <Typography variant="display-1" className="text-gradient mb-spacing-2">
                 {stat.value}
               </Typography>
-              <Typography variant="body" color="muted">
+              <Typography variant="body" textColor="muted">
                 {stat.label}
               </Typography>
             </div>

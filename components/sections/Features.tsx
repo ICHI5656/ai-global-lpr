@@ -100,11 +100,11 @@ export default function Features() {
                     <feature.icon className="h-6 w-6 text-white" />
                   </div>
                   
-                  <Typography variant="h5" color="light" className="mb-spacing-2">
+                  <Typography variant="h5" textColor="light" className="mb-spacing-2">
                     {feature.title}
                   </Typography>
                   
-                  <Typography variant="body-sm" color="muted">
+                  <Typography variant="body-sm" textColor="muted">
                     {feature.description}
                   </Typography>
                 </div>
@@ -125,7 +125,7 @@ export default function Features() {
               <Typography variant="h3" className="text-gradient mb-spacing-4">
                 エンタープライズ対応
               </Typography>
-              <Typography variant="body" color="muted" className="mb-spacing-6">
+              <Typography variant="body" textColor="muted" className="mb-spacing-6">
                 大規模なエンタープライズ環境にも対応可能な、
                 スケーラブルで信頼性の高いソリューションを提供します。
               </Typography>

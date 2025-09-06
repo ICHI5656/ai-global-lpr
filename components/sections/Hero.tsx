@@ -73,10 +73,10 @@ export default function Hero() {
               <div className="w-16 h-16 rounded-radius-3 gradient-primary flex items-center justify-center mb-spacing-3">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <Typography variant="h6" color="light">
+              <Typography variant="h6" textColor="light">
                 高精度認識
               </Typography>
-              <Typography variant="body-sm" color="muted" align="center">
+              <Typography variant="body-sm" textColor="muted" align="center">
                 99.9%の認識精度を実現
               </Typography>
             </div>
@@ -85,10 +85,10 @@ export default function Hero() {
               <div className="w-16 h-16 rounded-radius-3 gradient-primary flex items-center justify-center mb-spacing-3">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <Typography variant="h6" color="light">
+              <Typography variant="h6" textColor="light">
                 リアルタイム処理
               </Typography>
-              <Typography variant="body-sm" color="muted" align="center">
+              <Typography variant="body-sm" textColor="muted" align="center">
                 0.1秒以内の高速レスポンス
               </Typography>
             </div>
@@ -97,10 +97,10 @@ export default function Hero() {
               <div className="w-16 h-16 rounded-radius-3 gradient-primary flex items-center justify-center mb-spacing-3">
                 <Sparkles className="h-8 w-8 text-white" />
               </div>
-              <Typography variant="h6" color="light">
+              <Typography variant="h6" textColor="light">
                 AI最適化
               </Typography>
-              <Typography variant="body-sm" color="muted" align="center">
+              <Typography variant="body-sm" textColor="muted" align="center">
                 自動学習で継続的に改善
               </Typography>
             </div>

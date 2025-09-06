@@ -25,7 +25,7 @@ const typographyVariants = cva("", {
       "lead": "text-body-10 font-medium text-neutral-200",
       "caption": "text-body-3 font-medium text-neutral-300",
     },
-    color: {
+    textColor: {
       default: "",
       primary: "text-primary",
       gradient: "text-gradient",
@@ -40,7 +40,7 @@ const typographyVariants = cva("", {
   },
   defaultVariants: {
     variant: "body",
-    color: "default",
+    textColor: "default",
     align: "left",
   },
 })
@@ -52,10 +52,10 @@ export interface TypographyProps
 }
 
 const Typography = forwardRef<HTMLElement, TypographyProps>(
-  ({ className, variant, color, align, as: Component = "p", ...props }, ref) => {
+  ({ className, variant, textColor, align, as: Component = "p", ...props }, ref) => {
     return (
       <Component
-        className={cn(typographyVariants({ variant, color, align, className }))}
+        className={cn(typographyVariants({ variant, textColor, align, className }))}
         ref={ref as any}
         {...props}
       />
